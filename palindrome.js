@@ -7,16 +7,19 @@ function checkPalindrome(string) {
 
         // check if first and last string are same
         if (string[i] !== string[len - 1 - i]) {
-            return 'It is not a palindrome';
+            // return 'It is not a palindrome';
+    document.getElementById("demo").innerHTML = "It is not a palindrome";
+    return '';
         }
     }
-    return 'It is a palindrome';
+    document.getElementById("demo").innerHTML = "It is a palindrome";
+    return '';
 }
 
 // take input
 
-const string = '12321';
-// const string = 'Pakistan';
+// const string = '12321';
+const string = 'Pakistan';
 
 // call the function
 const value = checkPalindrome(string);
