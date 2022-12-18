@@ -2,6 +2,11 @@ function checkPalindrome(string) {
     
     // find the length of a string
     const len = string.length;
+    if(len<10)
+    {
+    document.getElementById("demo").innerHTML = "Please Enter String of length greater than 10";
+    return ;
+    }
     // loop through half of the string
     for (let i = 0; i < len / 2; i++) {
 
